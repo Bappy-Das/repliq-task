@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from "../../assets/repliq2x-logo.png"
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     return (
@@ -61,9 +62,9 @@ const Login = () => {
                 <div className="flex items-center justify-center mt-2">
                     <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
                         Don't have an account? 
-                        <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500 px-1">
+                        <Link to="/register"className="font-semibold text-indigo-600 hover:text-indigo-500 px-1">
                         Register Here
-                      </a>
+                      </Link>
                     </label>
                 </div>
             </div>
